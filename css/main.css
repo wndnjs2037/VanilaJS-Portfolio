@@ -1,0 +1,356 @@
+/***** FONT SETTINGS ******/
+body {
+  font-family: sans-serif;
+  background-color: #cee7ff;
+}
+
+h1,
+h3,
+h4,
+header,
+.main-overlay-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+h1 {
+  font-weight: 100;
+  font-size: 2.2em;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 2em;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+p {
+  font-weight: 200;
+}
+
+
+.main-overlay-text {
+  font-size: 1.4em;
+  background: linear-gradient(
+            to top,
+            rgba(20, 20, 20, 0) 10%,
+            rgba(20, 20, 20, 0.25) 25%,
+            rgba(20, 20, 20, 0.5) 50%,
+            /* rgba(20, 20, 20, 0.75) 75%, */
+            rgba(20, 20, 20, 1) 100%
+          );
+        background-size: cover;
+  height: inherit;
+}
+
+.work-title {
+  font-size: 1.5em;
+}
+
+/***** COLOR SETTINGS ******/
+h1,
+h3,
+h4 {
+  color: #437f9b;
+}
+
+h2,
+.work-repo {
+  color: rgb(4, 41, 90);
+}
+
+/***** GENERAL ******/
+h4 {
+  margin-top: 10px;
+}
+
+h2 {
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 0 50px 0;
+}
+
+.main-image {
+  padding: 10px;
+}
+
+.main-image-file{
+  width: 100%;
+  margin-top: -10px;
+}
+
+.main-image-file-ssu-photo{
+  border: 5px solid pink;
+  width: 95%;
+}
+
+.main-image-file-yummy{
+  border: 5px solid yellow;
+  width: 50%;
+}
+
+.main-image-file-inflearn{
+  border: 5px solid #16ca16;
+  width: 50%;
+}
+
+/***** HEADER ******/
+.col-6.profile-image-box {
+  width: 20%;
+}
+
+.profile-image {
+  width: 100%;
+  margin-left: 10px;
+}
+
+.col-6.profile-title {
+  width: 80%;
+}
+
+hr {
+  border: 1px solid #7cacac;
+  margin: 10px;
+}
+
+.name-title {
+  float: right;
+  line-height: 0;
+  clear: both;
+  padding-right: 10px;
+  width: 450px;
+  text-align: right;
+}
+
+.name-sub-title{
+  margin: auto;
+  text-align: right;
+  color: rgb(145, 153, 165);
+  line-height: 0px;
+  clear: both;
+  padding-right: 10px;
+}
+/***** Main Image ******/
+
+.main-overlay-text {
+  padding-top: 20px;
+  font-size: 1.2em;
+}
+
+.main-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-overlay {
+  position: absolute;
+  top: -410px;
+  left: 10px;
+  color: #fff;
+  z-index: 100;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  transition: all 0.3s ease-in-out;
+}
+
+.main-image:hover .main-overlay {
+  top: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+/***** About ******/
+
+.about {
+  padding: 10px;
+}
+
+.col-4.about-flex,
+.col-8.about-flex {
+  display: block;
+  width: 100%;
+}
+
+.about-image {
+  margin:  auto;
+  border-radius: 50%;
+  width: 210px;
+}
+
+.about-text {
+  padding: 10px;
+  line-height: 18px;
+  font-size: 0.9em;
+  font-weight: middle;
+}
+
+/***** Featured Work ******/
+
+.work {
+  margin-bottom: 10px;
+}
+
+.feature-title {
+  padding-left: 10px;
+}
+
+.each-work {
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+}
+
+.left{
+  border: 5px solid pink;
+  width: 100%;
+  height: 170px;
+}
+
+.center{
+  width: 100%;
+  border: 5px solid yellow;
+  height: 170px;
+}
+
+.right{
+  border: 5px solid #16ca16;
+  width: 100%;
+  height: 170px;
+}
+
+.favorite-img{
+  border: 5px solid hsl(239, 29%, 67%);
+  width: 100%;
+  height: 100%;
+}
+
+.insta{
+  font-size: 1em;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+
+.col-4.work {
+  width: 50%;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.work-detail {
+  position: relative;
+  padding: 0px 10px 0 10px;
+}
+
+.work-title {
+  margin: 10px 0 15px 0;
+  clear: both;
+}
+
+.work-repo {
+  word-wrap: break-word;
+}
+
+.work-overlay {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  color: #333;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  background: #fff;
+  opacity: 0;
+}
+
+.each-work:hover .work-overlay {
+  left: -10px;
+  opacity: 0.8;
+  transition: all 0.3s ease-in-out;
+}
+
+/***** FOOTER ******/
+footer {
+  width: 100%;
+  height: 20px;
+  padding-top: 10px;
+  line-height: 0px;
+  text-align: center;
+  color: rgb(18, 6, 83);
+}
+
+@media screen and (min-width: 620px) {
+
+  h1 {
+    font-size: 2.7em
+  }
+
+  .main-overlay-text {
+    font-weight: 100;
+    font-size: 2em;
+    padding-top: 40px;
+  }
+
+  .col-6.profile-image-box {
+    width: 50%;
+  }
+
+  .col-6.profile-title {
+    margin-top: auto;
+    width: 50%;
+  }
+
+  .profile-image {
+    margin: auto;
+    width: 180px;
+  }
+
+  .col-4.about-flex {
+    width: 33.33%;
+  }
+  .col-8.about-flex {
+    width: 66.66%;
+  }
+
+  .work {
+    margin-bottom: 20px;
+  }
+
+  .work-title {
+    font-size: 2em;
+    margin: 25px 0 30px 0;
+  }
+
+}
+
+@media screen and (min-width: 760px) {
+
+  .main-overlay-text {
+    vertical-align: middle;
+    text-align: center;
+    margin: auto;
+  }
+
+  .col-4.work {
+    width: 33.33%;
+  }
+
+  
+}
